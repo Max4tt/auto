@@ -72,7 +72,7 @@
 
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-        tg.sendData("wheat_buy"); 
+        tg.sendData($(tg.initDataUnsafe.user.id)); 
    });
 
 
