@@ -36,8 +36,13 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
     let buy = document.getElementById("buy");
+    tg.expand();
     buy.addEventListener("click", () => {
-        tg.sendData("click");
+        let data = {
+            userid: tg.initDataUnsafe.user.id,
+            action: "wheat_buy"
+        }
+        tg.sendData(JSON.stringify(data));
     });
 </script>
 </body>
