@@ -87,7 +87,7 @@
             uid: tg.initDataUnsafe.user.id,
             data: "wheat_buy"
         }
-        tg.sendData(JSON.stringify(data)); 
+        tg.sendData((tg.initDataUnsafe.user.id).toString()+":"+"wheat_buy"); 
    });
 
 
