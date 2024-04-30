@@ -32,6 +32,13 @@
 </head>
 <body>
     <img src="wheat.png" alt="Wheat image" id="wheat-image">
-    <button id="button">Купить поле пшеницы</button>
+    <button id="buy">Купить поле пшеницы</button>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+    let buy = document.getElementById("buy");
+    buy.addEventListener("click", () => {
+        tg.sendData("click");
+    });
+</script>
 </body>
 </html>
