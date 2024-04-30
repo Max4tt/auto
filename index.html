@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.gooogleapis.com/css2?family=Monterrat:wght@200:500&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -15,11 +17,44 @@
         body {
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
+        }
+
+        #main {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 50px;
+            margin-bottom:10px;
+        }
+
+        button {
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 500ms ease;
+            color: var(--tg-theme-bg-color);
+            background: var(--tg-theme-button-text-color);
+
+        }
+
+        button:hover {
+            background: var(--tg-theme-secondary-bg-color);
         }
     </style>
 </head>
 <body>
     <p>Привет!</p>
     <button id="buy">Купить</button>
+<script src="https://telegram.org/js/telegram-web-apps.js"></script>
 </body>
 </html>
