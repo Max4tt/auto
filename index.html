@@ -55,7 +55,7 @@
    tg.expand(); //расширяем на все окно  
 
    tg.MainButton.setText("Купить"); //изменяем текст кнопки иначе
-   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
+   tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
@@ -71,11 +71,6 @@
    });
 
 
-   Telegram.WebApp.onEvent('mainButtonClicked', function(){
-        tg.sendData($(tg.initDataUnsafe.user.userid)); 
-   });
-
-
    let usercard = document.getElementById("usercard");
 
    let profName = document.createElement('p');
@@ -87,6 +82,10 @@
    let userid = document.createElement('p');
    userid.innerText = `${tg.initDataUnsafe.user.id}`;
    usercard.appendChild(userid);
+
+   Telegram.WebApp.onEvent('mainButtonClicked', function(){
+        tg.sendData(userid); 
+   });
 
 </script>
 </html>
