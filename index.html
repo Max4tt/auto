@@ -1,60 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Corn Website</title>
     <style>
-        @import url('https://fonts.gooogleapis.com/css2?family=Monterrat:wght@200:500&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 200;
-            color: var(--tg-theme-text-color);
-            background: white;
-        }
-
-        #main {
-            width: 100%;
-            padding: 20px;
+            background-color: green;
             text-align: center;
         }
-
-        p {
-            margin-top: 50px;
-            margin-bottom:10px;
+        #corn-image {
+            display: block;
+            margin: 0 auto;
         }
-
-        button {
-            border: 0;
+        .button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
             border-radius: 5px;
-            margin-top: 50px;
-            height: 60px;
-            width: 200px;
-            font-size: 20px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 500ms ease;
-            color: var(--tg-theme-bg-color);
-            background: green;
-
-        }
-
-        button:hover {
-            background: var(--tg-theme-secondary-bg-color);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <p>Привет!</p>
-    <button id="buy">Купить</button>
-<script src="https://telegram.org/js/telegram-web-apps.js"></script>
+    <img src="corn-image.jpg" alt="Corn Image" id="corn-image">
+    <button id="button">Click Here</button>
 </body>
 </html>
